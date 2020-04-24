@@ -1,0 +1,26 @@
+<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app>
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+    </ion-buttons>
+    
+    <ion-button slot="start" fill="clear" color="dark"[routerLink]="['/home/']" routerDirection="forward">
+      <ion-icon slot="icon-only" name="home-outline"></ion-icon>
+      </ion-button>
+    <ion-button slot="start" fill="clear" color="dark"[routerLink]="['/artists/']" routerDirection="forward">
+      <ion-icon slot="icon-only" name="brush-outline"></ion-icon>
+      </ion-button>
+      <ion-button slot="start" fill="clear" color="dark"[routerLink]="['/poetry/']" routerDirection="forward">
+        <ion-icon slot="icon-only" name="pencil-outline"></ion-icon>
+        </ion-button>
+        <ion-button slot="start" fill="clear" color="dark"[routerLink]="['/help/']" routerDirection="forward">
+          <ion-icon slot="icon-only" name="help-outline"></ion-icon>
+          </ion-button>
+    </ion-toolbar>
+</ion-header>
+
+

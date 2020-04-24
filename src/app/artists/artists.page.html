@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start">
+  <ion-back-button></ion-back-button>
+  </ion-buttons>
+  <ion-title>Artists</ion-title>
+  <ion-button slot="end" fill="clear" color="dark"[routerLink]="['/home/']" routerDirection="forward">
+    <ion-icon slot="icon-only" name="home-outline"></ion-icon>
+    </ion-button>
+  <ion-button slot="end" fill="clear" color="dark"[routerLink]="['/artists/']" routerDirection="forward">
+    <ion-icon slot="icon-only" name="brush-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <ul>
+    <li><ion-button shape=“round” [routerLink]="['/vincent/']" routerDirection="forward">Vincent van Gogh</ion-button></li>
+    <li><ion-button shape=“round” [routerLink]="['/pablo/']" routerDirection="forward">Pablo Picasso</ion-button></li>
+    <li><ion-button shape=“round” [routerLink]="['/salvador/']" routerDirection="forward">Salvador Dali</ion-button></li>
+  </ul>
+
+  <ion-fab vertical="bottom" horizontal="end">
+    <ion-fab-button>Share</ion-fab-button>
+  
+    <ion-fab-list side="top">
+      <ion-fab-button>Facebook</ion-fab-button>
+      <ion-fab-button>Twitter</ion-fab-button>
+      <ion-fab-button>Youtube</ion-fab-button>
+    </ion-fab-list>
+  
+    <ion-fab-list side="start">
+      <ion-fab-button>Vimeo</ion-fab-button>
+    </ion-fab-list>
+  
+  </ion-fab>
+
+</ion-content>
